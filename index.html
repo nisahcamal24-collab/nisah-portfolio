@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Makes the website look correct on mobile phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nisah H. Camal | Virtual Assistant</title>
+
+  <!-- Links to your stylesheet (style.css) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts: Playfair Display for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION BAR
+       - The menu bar at the top of the page
+       - Links scroll smoothly to each section
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Nisah H. Camal</a>
+
+      <!-- Hamburger icon for mobile menu (three lines) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="nav-cta">Let's Work Together</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO SECTION
+       - The very first thing visitors see
+       - Shows your name, title, and a short tagline
+  ============================================================ -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Nisah H. Camal</h1>
+
+      <!-- EDIT: Replace with your title/specialization -->
+      <h2 class="hero-title">Virtual Assistant &amp; Social Media Manager</h2>
+
+      <!-- EDIT: Replace with your own short tagline (1-2 sentences) -->
+      <p class="hero-tagline">
+        I help busy executives and entrepreneurs stay organized, look professional online,
+        and reclaim their time — so they can focus on what matters most.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-primary">See What I Do</a>
+        <a href="#contact" class="btn btn-outline">Work With Me</a>
+      </div>
+    </div>
+
+    <!-- Decorative background shapes (styled in CSS) -->
+    <div class="hero-decoration" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+       - A short introduction about who you are
+       - Include a photo, background, and what makes you different
+  ============================================================ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- EDIT: Replace this placeholder with your own photo -->
+        <!-- To add a photo: save your image in the same folder as index.html
+             then change "your-photo.jpg" to your actual file name -->
+        <div class="about-image">
+          <div class="image-frame">
+            <div class="ring-inner"></div>
+            <div class="ring-outer"></div>
+            <img
+              src="Images/about.png"
+              alt="Photo of Nisah"
+              onerror="this.parentElement.classList.add('no-photo')"
+            />
+          </div>
+        </div>
+
+        <div class="about-text about-card">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">The Person Behind the Work</h2>
+
+          <p>
+            Hi, I'm Nisah. A dedicated Executive Virtual Assistant and Social Media Manager
+            with over 5 years of experience supporting executives, entrepreneurs, and small
+            business owners. I specialize in executive assistance and social media management,
+            helping clients run smoother operations and build a stronger online presence.
+          </p>
+
+          <p>
+            I bring a detail-oriented, proactive approach to every project. Clear communication,
+            consistent deadlines, and going the extra mile are not just promises; they are the
+            standard I hold myself to for every client I serve.
+          </p>
+
+          <p class="about-what-label">What I bring to the table:</p>
+
+          <ul class="about-highlights">
+            <li>
+              <span class="highlight-icon">&#10003;</span>
+              <span>Experienced in executive-level calendar and inbox management</span>
+            </li>
+            <li>
+              <span class="highlight-icon">&#10003;</span>
+              <span>Skilled in content creation and social media strategy</span>
+            </li>
+            <li>
+              <span class="highlight-icon">&#10003;</span>
+              <span>Reliable, professional, and confidential — always</span>
+            </li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary">Let's Connect</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       HOW I WORK SECTION
+  ============================================================ -->
+  <section id="process" class="process section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Process</span>
+        <h2 class="section-title">How I Work</h2>
+        <p class="section-subtitle">A clear and structured approach from the first conversation to ongoing results.</p>
+      </div>
+      <div class="process-steps">
+
+        <div class="process-step">
+          <span class="step-num" aria-hidden="true">01</span>
+          <div class="step-icon-wrap" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+          </div>
+          <h3 class="step-title">Discovery</h3>
+          <p class="step-desc">We start with a focused conversation to understand your goals, pain points, current systems, and what support looks like for your business. No guesswork, just clarity.</p>
+        </div>
+
+        <div class="process-connector" aria-hidden="true">
+          <div class="connector-dash"></div>
+        </div>
+
+        <div class="process-step">
+          <span class="step-num" aria-hidden="true">02</span>
+          <div class="step-icon-wrap" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="13" y2="12"/><line x1="7" y1="16" x2="15" y2="16"/></svg>
+          </div>
+          <h3 class="step-title">Planning</h3>
+          <p class="step-desc">I map out a tailored strategy covering content direction, platform priorities, workflows, and timelines. Everything is documented and aligned before execution begins.</p>
+        </div>
+
+        <div class="process-connector" aria-hidden="true">
+          <div class="connector-dash"></div>
+        </div>
+
+        <div class="process-step">
+          <span class="step-num" aria-hidden="true">03</span>
+          <div class="step-icon-wrap" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="step-title">Execution</h3>
+          <p class="step-desc">I get to work handling the day-to-day so you do not have to. From content scheduling and inbox management to system building, every task is handled with precision and consistency.</p>
+        </div>
+
+        <div class="process-connector" aria-hidden="true">
+          <div class="connector-dash"></div>
+        </div>
+
+        <div class="process-step">
+          <span class="step-num" aria-hidden="true">04</span>
+          <div class="step-icon-wrap" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          </div>
+          <h3 class="step-title">Optimization</h3>
+          <p class="step-desc">I track what is working, flag what is not, and continuously refine the approach. Monthly reviews keep the strategy sharp and aligned with your evolving goals.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES SECTION
+       - The main services you offer
+       - Each card is one service
+       - EDIT: Add, remove, or rename cards to match your actual services
+  ============================================================ -->
+  <section id="services" class="services section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I Offer</span>
+        <h2 class="section-title">Services</h2>
+        <!-- EDIT: Change or remove this subtitle -->
+        <p class="section-subtitle">Tailored support to help you work smarter, not harder.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- SERVICE CARD 1 -->
+        <!-- EDIT: Change the icon (emoji), title, and description -->
+        <div class="service-card">
+          <div class="service-icon">&#128197;</div>
+          <h3>Executive Assistance</h3>
+          <p>
+            Inbox filtering, calendar gatekeeping, and day-to-day administrative support — so you can stay in your zone of genius.
+          </p>
+        </div>
+
+        <!-- SERVICE CARD 2 -->
+        <div class="service-card">
+          <div class="service-icon">&#128242;</div>
+          <h3>Social Media Management</h3>
+          <p>
+            Content planning, post scheduling, caption writing, audience engagement, and performance reporting across Instagram, LinkedIn, Facebook, and Threads.
+          </p>
+        </div>
+
+        <!-- SERVICE CARD 3 -->
+        <div class="service-card">
+          <div class="service-icon">&#9997;&#65039;</div>
+          <h3>Content Creation</h3>
+          <p>
+            Eye-catching graphics, branded templates, carousel design, and written content that matches your voice and resonates with your audience.
+          </p>
+        </div>
+
+        <!-- SERVICE CARD 5 -->
+        <div class="service-card">
+          <div class="service-icon">&#128202;</div>
+          <h3>Research &amp; Reporting</h3>
+          <p>
+            Competitor analysis, brand audit, and monthly analytics reporting to track what's working and refine your content strategy.
+          </p>
+        </div>
+
+        <!-- SERVICE CARD 6 -->
+        <!-- EDIT: Replace with another service you offer, or delete this card -->
+        <div class="service-card">
+          <div class="service-icon">&#128101;</div>
+          <h3>Community Management</h3>
+          <p>
+            Monitoring comments and DMs, moderating online groups, responding to inquiries,
+            and nurturing your online community to build brand loyalty and trust.
+          </p>
+          <p><small>(Available as an add-on)</small></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TOOLS & PLATFORMS SECTION
+       - Shows the software/apps you know how to use
+       - EDIT: Add or remove tool-cell blocks below
+  ============================================================ -->
+  <section id="tools" class="tools section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Tech Stack</span>
+        <h2 class="section-title">Tools &amp; Platforms I Use</h2>
+        <p class="section-subtitle">I'm comfortable working with the tools your business already uses.</p>
+      </div>
+
+      <div class="tools-showcase">
+        <div class="tools-inner-grid">
+
+          <!-- Meta Business Suite -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="8" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <path d="M11 30V14l5.5 9 5.5-7.5 5.5 7.5 5.5-9V30" stroke="#C4A97A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="tool-label">Meta Business Suite</span>
+          </div>
+
+          <!-- Buffer -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="8" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <rect x="11" y="14" width="22" height="3.5" rx="1.75" fill="#C4A97A"/>
+                <rect x="11" y="20.25" width="22" height="3.5" rx="1.75" fill="#C4A97A" opacity="0.65"/>
+                <rect x="11" y="26.5" width="15" height="3.5" rx="1.75" fill="#C4A97A" opacity="0.38"/>
+              </svg>
+            </div>
+            <span class="tool-label">Buffer</span>
+          </div>
+
+          <!-- Canva -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="18" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <circle cx="22" cy="22" r="6.5" stroke="#C4A97A" stroke-width="2" fill="none"/>
+                <circle cx="22" cy="12.5" r="2.5" fill="#C4A97A"/>
+                <circle cx="31.5" cy="22" r="2.5" fill="#C4A97A" opacity="0.65"/>
+                <circle cx="22" cy="31.5" r="2.5" fill="#C4A97A" opacity="0.38"/>
+                <circle cx="12.5" cy="22" r="2.5" fill="#C4A97A" opacity="0.55"/>
+              </svg>
+            </div>
+            <span class="tool-label">Canva</span>
+          </div>
+
+          <!-- CapCut -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="8" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <rect x="8" y="15" width="20" height="14" rx="3.5" stroke="#C4A97A" stroke-width="1.8" fill="rgba(196,169,122,0.08)"/>
+                <path d="M28 19.5l8-4.5v14l-8-4.5V19.5z" fill="#C4A97A" opacity="0.6"/>
+                <rect x="13" y="19" width="5" height="6" rx="1.5" fill="#C4A97A" opacity="0.85"/>
+              </svg>
+            </div>
+            <span class="tool-label">CapCut</span>
+          </div>
+
+          <!-- Notion -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="8" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <path d="M15 12h14l-2 20H15l-3-17 3-3z" fill="rgba(196,169,122,0.12)" stroke="#C4A97A" stroke-width="1.6" stroke-linejoin="round"/>
+                <line x1="16" y1="18" x2="26" y2="18" stroke="#C4A97A" stroke-width="1.5" stroke-linecap="round" opacity="0.75"/>
+                <line x1="16" y1="22" x2="24" y2="22" stroke="#C4A97A" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                <line x1="16" y1="26" x2="21" y2="26" stroke="#C4A97A" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+              </svg>
+            </div>
+            <span class="tool-label">Notion</span>
+          </div>
+
+          <!-- Trello -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="8" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <rect x="9" y="12" width="10.5" height="20" rx="2.5" fill="#C4A97A"/>
+                <rect x="24.5" y="12" width="10.5" height="13" rx="2.5" fill="#C4A97A" opacity="0.52"/>
+              </svg>
+            </div>
+            <span class="tool-label">Trello</span>
+          </div>
+
+          <!-- Asana -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="18" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <circle cx="22" cy="17" r="5.5" fill="#C4A97A"/>
+                <circle cx="13.5" cy="27.5" r="5.5" fill="#C4A97A" opacity="0.65"/>
+                <circle cx="30.5" cy="27.5" r="5.5" fill="#C4A97A" opacity="0.4"/>
+              </svg>
+            </div>
+            <span class="tool-label">Asana</span>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="18" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <path d="M22 10c-6.627 0-12 5.373-12 12a11.9 11.9 0 001.74 6.23L10 34l5.93-1.71A11.96 11.96 0 0022 34c6.627 0 12-5.373 12-12S28.627 10 22 10z" stroke="#C4A97A" stroke-width="1.8" fill="none"/>
+                <path d="M17.5 20.5c.3-.8.9-1.5 1.7-1.5.5 0 .9.3 1.2.7l1 1.6c.2.4.1.9-.2 1.2l-.6.6c.6 1.1 1.5 2 2.6 2.6l.6-.6c.3-.3.8-.4 1.2-.2l1.6 1c.4.3.7.7.7 1.2 0 .8-.7 1.4-1.5 1.7-2.5.9-6.5-3.1-5.6-5.6" fill="#C4A97A" opacity="0.8"/>
+              </svg>
+            </div>
+            <span class="tool-label">WhatsApp</span>
+          </div>
+
+          <!-- Google Workspace -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="18" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <path d="M33 22c0-6.075-4.925-11-11-11S11 15.925 11 22s4.925 11 11 11a10.97 10.97 0 009.8-6.05H22v-4h11c.13.65.2 1.32.2 2" stroke="#C4A97A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </div>
+            <span class="tool-label">Google Workspace</span>
+          </div>
+
+          <!-- Slack -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="8" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <!-- top-left arm -->
+                <rect x="10" y="17" width="10" height="4" rx="2" fill="#C4A97A"/>
+                <circle cx="11.5" cy="25.5" r="3" fill="#C4A97A" opacity="0.6"/>
+                <!-- top arm -->
+                <rect x="19" y="10" width="4" height="10" rx="2" fill="#C4A97A" opacity="0.75"/>
+                <!-- bottom-right arm -->
+                <rect x="24" y="23" width="10" height="4" rx="2" fill="#C4A97A" opacity="0.5"/>
+                <circle cx="32.5" cy="18.5" r="3" fill="#C4A97A" opacity="0.38"/>
+                <!-- right arm -->
+                <rect x="21" y="24" width="4" height="10" rx="2" fill="#C4A97A" opacity="0.62"/>
+              </svg>
+            </div>
+            <span class="tool-label">Slack</span>
+          </div>
+
+          <!-- ChatGPT -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="18" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <path d="M34 18.5A10 10 0 0025.5 10a10 10 0 00-9.8 8A8 8 0 0010 26a8 8 0 006 7.75V36h12v-2.25A8 8 0 0034 26a8 8 0 000-7.5z" stroke="#C4A97A" stroke-width="1.6" fill="rgba(196,169,122,0.06)"/>
+                <circle cx="19" cy="23" r="1.5" fill="#C4A97A" opacity="0.9"/>
+                <circle cx="25" cy="23" r="1.5" fill="#C4A97A" opacity="0.9"/>
+                <path d="M19 27.5c.8.9 5.2.9 6 0" stroke="#C4A97A" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+              </svg>
+            </div>
+            <span class="tool-label">ChatGPT</span>
+          </div>
+
+          <!-- Claude -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="18" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <path d="M29 15a10 10 0 010 14M15 15a10 10 0 000 14" stroke="#C4A97A" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+                <circle cx="22" cy="22" r="5" stroke="#C4A97A" stroke-width="2" fill="rgba(196,169,122,0.12)"/>
+                <circle cx="22" cy="22" r="1.8" fill="#C4A97A"/>
+              </svg>
+            </div>
+            <span class="tool-label">Claude</span>
+          </div>
+
+          <!-- Zoom -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="8" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <rect x="8" y="15" width="20" height="14" rx="4" fill="#C4A97A" opacity="0.85"/>
+                <path d="M28 19.5l9-5v15l-9-5v-5z" fill="#C4A97A" opacity="0.5"/>
+              </svg>
+            </div>
+            <span class="tool-label">Zoom</span>
+          </div>
+
+          <!-- Calendly -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="8" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <rect x="9" y="13" width="26" height="22" rx="3.5" stroke="#C4A97A" stroke-width="1.8" fill="none"/>
+                <line x1="9" y1="20" x2="35" y2="20" stroke="#C4A97A" stroke-width="1.5" opacity="0.7"/>
+                <rect x="15" y="9" width="3" height="8" rx="1.5" fill="#C4A97A"/>
+                <rect x="26" y="9" width="3" height="8" rx="1.5" fill="#C4A97A"/>
+                <circle cx="17" cy="27" r="2.2" fill="#C4A97A" opacity="0.85"/>
+                <circle cx="27" cy="27" r="2.2" fill="#C4A97A" opacity="0.5"/>
+              </svg>
+            </div>
+            <span class="tool-label">Calendly</span>
+          </div>
+
+          <!-- Make -->
+          <div class="tool-cell">
+            <div class="tool-icon">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="36" height="36" rx="18" fill="rgba(196,169,122,0.10)" stroke="rgba(196,169,122,0.28)" stroke-width="1"/>
+                <circle cx="16" cy="22" r="6" stroke="#C4A97A" stroke-width="2" fill="none"/>
+                <circle cx="28" cy="22" r="6" stroke="#C4A97A" stroke-width="2" fill="rgba(196,169,122,0.10)"/>
+                <path d="M21 16.7a6 6 0 010 10.6" stroke="#C4A97A" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.45"/>
+              </svg>
+            </div>
+            <span class="tool-label">Make</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PORTFOLIO / SELECTED WORK SECTION
+  ============================================================ -->
+  <section id="portfolio" class="portfolio section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Selected Work</span>
+        <h2 class="section-title">Portfolio &amp; Selected Work</h2>
+        <p class="section-subtitle">A curated look at the systems, content, and strategies I build for clients.</p>
+      </div>
+
+      <!-- Featured Mockup — full width -->
+      <div class="pf-featured">
+        <div class="pf-featured-thumb" style="padding:0;overflow:hidden;">
+          <img src="Images/featured.webp" alt="Engineering Authority: The Tawakkul Digital Growth Engine — 540,000+ targeted impressions, 87% reach from non-followers, 100% growth in high-quality accounts" style="width:100%;height:auto;display:block;">
+          <span class="pf-featured-badge">Featured</span>
+        </div>
+        <div class="pf-featured-body">
+          <span class="pf-cat-pill">Full-Service Social Media Management</span>
+          <h3 class="pf-featured-title">End-to-End Client Content System</h3>
+          <p class="pf-featured-desc">
+            A complete content operation built for a lifestyle brand, spanning strategy,
+            content creation, scheduling, community management, and monthly analytics
+            reporting across Instagram, Facebook, and LinkedIn.
+          </p>
+          <div class="pf-tag-row">
+            <span class="pf-tag">Strategy</span>
+            <span class="pf-tag">Content Creation</span>
+            <span class="pf-tag">Scheduling</span>
+            <span class="pf-tag">Analytics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 1: Strategy & Content Execution System -->
+      <div class="pf-cc">
+        <div class="pf-cc-header">
+          <span class="pf-cc-icon">&#128203;</span>
+          <div>
+            <h3 class="pf-cc-title">Strategy &amp; Content Execution System</h3>
+            <p class="pf-cc-sub">Calendars, workflows, audits, and research decks</p>
+          </div>
+        </div>
+        <div class="pf-grid-wrap">
+          <div class="pf-grid">
+
+            <div class="pf-tile" style="grid-column: 1 / -1;">
+              <div class="pf-thumb">
+                <img src="Images/competitor analysis.webp" alt="Competitor Analysis Report — benchmarking and platform comparison research" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Competitor Analysis Report</p>
+              </div>
+            </div>
+
+            <div class="pf-tile">
+              <div class="pf-thumb">
+                <img src="Images/maarket analysis.webp" alt="Market Research Deck" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Market Research Deck</p>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--vcenter">
+              <div class="pf-thumb">
+                <img src="Images/content cal.webp" alt="Content Calendar" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Content Calendar</p>
+              </div>
+            </div>
+
+            <div class="pf-tile">
+              <div class="pf-thumb">
+                <img src="Images/brand audit.webp" alt="Brand Audit Report" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Brand Audit Report</p>
+              </div>
+            </div>
+
+            <div class="pf-tile">
+              <div class="pf-thumb">
+                <img src="Images/content plan1.webp" alt="Content Plan" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Content Plan</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="pf-scroll-hint">
+          <span class="pf-hint-line"></span>
+          <span class="pf-hint-text">Scroll to see more &#8595;</span>
+          <span class="pf-hint-line"></span>
+        </div>
+      </div>
+
+      <!-- Card 2: Content Outputs -->
+      <div class="pf-cc">
+        <div class="pf-cc-header">
+          <span class="pf-cc-icon">&#127912;</span>
+          <div>
+            <h3 class="pf-cc-title">Content Outputs</h3>
+            <p class="pf-cc-sub">Carousels, scripts, captions, and thumbnails</p>
+          </div>
+        </div>
+        <div class="pf-grid-wrap">
+          <div class="pf-grid">
+
+            <div class="pf-tile">
+              <div class="pf-thumb">
+                <img src="Images/carousel.webp" alt="Instagram Carousel Post" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Instagram Carousel Post</p>
+              </div>
+            </div>
+
+            <div class="pf-tile">
+              <div class="pf-thumb">
+                <img src="Images/statics.webp" alt="Static Image Posts — branded static graphics including SEO, social media engagement, bookings, web development, smart ads, and photography service tiles" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Static Image Posts</p>
+              </div>
+            </div>
+
+            <div class="pf-tile">
+              <div class="pf-thumb">
+                <img src="Images/REEL SCRIPT.webp" alt="Reel Script Template — structured hook, body, and CTA format for short-form video content" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Reel Script Template</p>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--vcenter">
+              <div class="pf-thumb">
+                <img src="Images/caption.webp" alt="Caption Copywriting Pack — Instagram and Facebook captions with hooks, calls to action, and platform-specific copy" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Caption Copywriting Pack</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="pf-scroll-hint">
+          <span class="pf-hint-line"></span>
+          <span class="pf-hint-text">Scroll to see more &#8595;</span>
+          <span class="pf-hint-line"></span>
+        </div>
+      </div>
+
+      <!-- Card 3: Platforms Managed -->
+      <div class="pf-cc">
+        <div class="pf-cc-header">
+          <span class="pf-cc-icon">&#128242;</span>
+          <div>
+            <h3 class="pf-cc-title">Platforms Managed</h3>
+            <p class="pf-cc-sub">Profile grids, page management, and analytics</p>
+          </div>
+        </div>
+        <div class="pf-grid-wrap">
+          <div class="pf-grid">
+
+            <div class="pf-tile">
+              <div class="pf-thumb">
+                <img src="Images/ig grid.webp" alt="Instagram Profile Grid" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Instagram Profile Grid</p>
+              </div>
+            </div>
+
+            <div class="pf-tile">
+              <div class="pf-thumb">
+                <img src="Images/linkedin.webp" alt="LinkedIn Company Page" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">LinkedIn Company Page</p>
+              </div>
+            </div>
+
+            <div class="pf-tile">
+              <div class="pf-thumb">
+                <img src="Images/fb page (1).webp" alt="Facebook Page Management" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Facebook Page Management</p>
+              </div>
+            </div>
+
+            <div class="pf-tile">
+              <div class="pf-thumb">
+                <img src="Images/analytics.webp" alt="Monthly Analytics Report" style="width:100%;height:auto;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+              <div class="pf-tile-body">
+                <p class="pf-tile-title">Monthly Analytics Report</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="pf-scroll-hint">
+          <span class="pf-hint-line"></span>
+          <span class="pf-hint-text">Scroll to see more &#8595;</span>
+          <span class="pf-hint-line"></span>
+        </div>
+      </div>
+
+      <!-- Card 4: Operational Systems — no titles, dynamic sizing -->
+      <div class="pf-cc">
+        <div class="pf-cc-header">
+          <span class="pf-cc-icon">&#9881;&#65039;</span>
+          <div>
+            <h3 class="pf-cc-title">Operational Systems</h3>
+            <p class="pf-cc-sub">SOPs, checklists, Notion boards, and workflow spreadsheets</p>
+          </div>
+        </div>
+        <div class="pf-grid-wrap">
+          <div class="pf-grid pf-grid--dynamic">
+
+            <div class="pf-tile pf-tile--dynamic" style="grid-column: 1 / -1;">
+              <div class="pf-thumb pf-thumb--full">
+                <img src="Images/notion.webp" alt="Notion SMM dashboard — all-in-one social media management workflow with resources, templates, and planning tools" style="width:100%;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--dynamic" style="grid-column: 1 / -1;">
+              <div class="pf-thumb pf-thumb--full">
+                <img src="Images/ghl sop.webp" alt="GHL SOP — GoHighLevel standard operating procedure for CRM workflow and automation setup" style="width:100%;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--dynamic" style="grid-column: 1 / -1;">
+              <div class="pf-thumb pf-thumb--full">
+                <img src="Images/govcon sop.webp" alt="GovCon SOP — standard operating procedure for government contracting operations and compliance workflows" style="width:100%;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--dynamic">
+              <div class="pf-thumb pf-thumb--dynamic">
+                <img src="Images/monday.webp" alt="Monday.com Processing/Underwriting board — loan pipeline management with status tracking, lender details, and borrower information" style="width:100%;height:100%;object-fit:cover;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--dynamic">
+              <div class="pf-thumb pf-thumb--dynamic">
+                <img src="Images/reva.webp" alt="REVA property tracking spreadsheet — real estate virtual assistant database with listing status, pricing, and transaction notes" style="width:100%;height:100%;object-fit:cover;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--dynamic">
+              <div class="pf-thumb pf-thumb--dynamic">
+                <img src="Images/inbox1 (1).webp" alt="Gmail inbox management — organized email triage with priority labels and filtering system" style="width:100%;height:100%;object-fit:cover;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--dynamic">
+              <div class="pf-thumb pf-thumb--dynamic">
+                <img src="Images/ghl.webp" alt="GoHighLevel CRM Opportunities pipeline — lead management dashboard with stages from new lead to closed-won and closed-not-sold" style="width:100%;height:100%;object-fit:cover;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="pf-scroll-hint">
+          <span class="pf-hint-line"></span>
+          <span class="pf-hint-text">Scroll to see more &#8595;</span>
+          <span class="pf-hint-line"></span>
+        </div>
+      </div>
+
+      <!-- Card 5: Communication / Inbox — no titles, dynamic sizing -->
+      <div class="pf-cc">
+        <div class="pf-cc-header">
+          <span class="pf-cc-icon">&#128233;</span>
+          <div>
+            <h3 class="pf-cc-title">Communication / Inbox</h3>
+            <p class="pf-cc-sub">DM conversations and inbox dashboards</p>
+          </div>
+        </div>
+        <div class="pf-grid-wrap">
+          <div class="pf-grid pf-grid--dynamic pf-grid--single-col">
+
+            <div class="pf-tile pf-tile--dynamic">
+              <div class="pf-thumb pf-thumb--dynamic pf-thumb--full">
+                <img src="Images/outlook.webp" alt="Outlook inbox management — organized email triage with folder structure and filtered views" style="width:100%;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--dynamic">
+              <div class="pf-thumb pf-thumb--dynamic pf-thumb--full">
+                <img src="Images/inbox2.webp" alt="Gmail wire confirmation inbox — filtered search view with mortgage and real estate transaction emails" style="width:100%;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--dynamic">
+              <div class="pf-thumb pf-thumb--dynamic pf-thumb--full">
+                <img src="Images/inbox3.webp" alt="Gmail inbox with labeled folders — Appraisal, Funding, Insurance, Payroll, and Title Request categories for real estate file management" style="width:100%;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--dynamic">
+              <div class="pf-thumb pf-thumb--dynamic pf-thumb--full">
+                <img src="Images/inbox4.webp" alt="Tawakkul Digital Gmail inbox — organized with TD Communication, Digital Assets, Social Media, and Productivity labels" style="width:100%;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+            <div class="pf-tile pf-tile--dynamic">
+              <div class="pf-thumb pf-thumb--dynamic pf-thumb--full">
+                <img src="Images/inbox5.webp" alt="Gmail scheduled emails view — mortgage team follow-up and FHA Amendatory Clause correspondence queued for send" style="width:100%;display:block;">
+                <div class="pf-thumb-ov"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="pf-scroll-hint">
+          <span class="pf-hint-line"></span>
+          <span class="pf-hint-text">Scroll to see more &#8595;</span>
+          <span class="pf-hint-line"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PRICING SECTION
+       - Three retainer tiers with monthly / yearly billing toggle
+       - Placed before Testimonials so visitors read: offer → cost → proof
+  ============================================================ -->
+  <section id="pricing" class="pricing section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Investment</span>
+        <h2 class="section-title">What It Looks Like to Work Together</h2>
+        <p class="section-subtitle">Flexible retainers built around where you are and where you are going.</p>
+      </div>
+
+      <!-- Billing toggle -->
+      <div class="pricing-toggle-wrap">
+        <span class="pricing-period-label" id="pricingLabelMonthly">Monthly</span>
+
+        <button class="pricing-toggle-btn" id="pricingToggle" aria-label="Switch billing period" aria-pressed="false">
+          <span class="pricing-toggle-thumb"></span>
+        </button>
+
+        <span class="pricing-period-label" id="pricingLabelYearly">Yearly</span>
+      </div>
+
+      <!-- Cards -->
+      <div class="pricing-grid">
+
+        <!-- CARD 1: Foundation -->
+        <div class="pricing-card">
+          <span class="pricing-tier-pill">Starter</span>
+          <h3 class="pricing-plan-name">Foundation</h3>
+          <p class="pricing-tagline">Consistency Support</p>
+          <p class="pricing-description">Keep your presence active without the overwhelm.</p>
+
+          <div class="pricing-price-block">
+            <p class="pricing-price">
+              <span class="price-amount js-price-amount" data-monthly="$550" data-yearly="$6,050">$550</span><span class="price-period js-price-period" data-monthly="/month" data-yearly="/year">/month</span>
+            </p>
+            <p class="pricing-savings js-savings" data-yearly="Save $550/year when billed annually (1 month free)">&nbsp;</p>
+          </div>
+
+          <p class="pricing-best-for">Best for: <em>Solopreneurs who are ghosting their own social media</em></p>
+
+          <hr class="pricing-divider" />
+
+          <ul class="pricing-features">
+            <li>12 posts/month across Instagram and LinkedIn (static and carousels)</li>
+            <li>Basic Hashtag Research (5–10 hashtags per post)</li>
+            <li>Basic Caption Polish for grammar and flow</li>
+            <li>Light Engagement — 15 minutes/day replying to comments</li>
+            <li>Monthly Content Calendar</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-outline btn-full pricing-cta">Start with Foundation</a>
+        </div>
+
+        <!-- CARD 2: Growth (featured — most popular) -->
+        <div class="pricing-card pricing-card--featured">
+          <span class="pricing-tier-pill pricing-tier-pill--featured">Most Popular</span>
+          <h3 class="pricing-plan-name">Growth</h3>
+          <p class="pricing-tagline">For Ambitious Brands</p>
+          <p class="pricing-description">A structured system to turn visibility into authority.</p>
+
+          <div class="pricing-price-block">
+            <p class="pricing-price">
+              <span class="price-amount js-price-amount" data-monthly="$1,100" data-yearly="$12,100">$1,100</span><span class="price-period js-price-period" data-monthly="/month" data-yearly="/year">/month</span>
+            </p>
+            <p class="pricing-savings js-savings" data-yearly="Save $1,100/year when billed annually (1 month free)">&nbsp;</p>
+          </div>
+
+          <p class="pricing-best-for">Best for: <em>Scaling coaches and personal brands</em></p>
+
+          <hr class="pricing-divider" />
+
+          <ul class="pricing-features">
+            <li>Everything in Foundation across Instagram, LinkedIn, Facebook, and Threads</li>
+            <li>20 posts/month (static, carousels, and basic Reels)</li>
+            <li>Advanced Hashtag Research with mixed strategy refreshed bi-weekly</li>
+            <li>Proactive Outreach engaging with 5–10 ideal target accounts daily</li>
+            <li>Content Repurposing turning 1 long video or blog into 5 short-form posts</li>
+            <li>Monthly Analytics Report</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary btn-full pricing-cta">Start with Growth</a>
+        </div>
+
+        <!-- CARD 3: Operations -->
+        <div class="pricing-card">
+          <span class="pricing-tier-pill">Premium</span>
+          <h3 class="pricing-plan-name">Operations</h3>
+          <p class="pricing-tagline">Visibility and Operations</p>
+          <p class="pricing-description">Right-hand support so you can stay in your zone of genius.</p>
+
+          <div class="pricing-price-block">
+            <p class="pricing-price">
+              <span class="price-prefix js-price-prefix" data-monthly="Starting at " data-yearly="Starting at ">Starting at </span><span class="price-amount js-price-amount" data-monthly="$1,950" data-yearly="$21,450">$1,950</span><span class="price-period js-price-period" data-monthly="/month" data-yearly="/year">/month</span>
+            </p>
+            <p class="pricing-savings js-savings" data-yearly="Save $1,950/year when billed annually (1 month free)">&nbsp;</p>
+          </div>
+
+          <p class="pricing-best-for">Best for: <em>Busy CEOs and Agency Owners</em></p>
+
+          <hr class="pricing-divider" />
+
+          <ul class="pricing-features">
+            <li>Everything in Growth across all active platforms</li>
+            <li>24–28 posts/month</li>
+            <li>Executive Support with inbox filtering and calendar gatekeeping</li>
+            <li>CRM and Lead Follow-ups ensuring no DM or email lead goes cold</li>
+            <li>Workflow Optimization using free AI tools to automate repetitive admin tasks</li>
+            <li>Priority Communication — dedicated channel with faster response times</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-outline btn-full pricing-cta">Start with Operations</a>
+        </div>
+
+      </div><!-- /pricing-grid -->
+    </div><!-- /container -->
+  </section>
+
+
+  <!-- ============================================================
+       TESTIMONIALS SECTION
+       - Reviews and quotes from past clients
+       - EDIT: Replace the names, roles, and quotes with real ones
+  ============================================================ -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="section-header testimonials-header">
+        <span class="section-label">Kind Words</span>
+        <h2 class="section-title">What Clients Say</h2>
+      </div>
+
+      <!-- Single-card fade rotator -->
+      <div class="testimonials-rotator">
+
+        <!-- Left arrow (desktop only) -->
+        <button class="testimonial-arrow testimonial-arrow--prev" aria-label="Previous testimonial">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12 4l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <!-- Card stage -->
+        <div class="testimonial-stage" id="testimonialStage">
+
+          <!-- TESTIMONIAL 1 -->
+          <div class="testimonial-card tc-active" data-index="0">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>
+              "Nisah was consistent, dependable, and took real ownership of her work. From content scheduling to internal coordination, she kept our workflows running smoothly which allowed me to focus on higher-level strategy. She brings a strong work ethic, a positive attitude, and I would recommend her to anyone looking for reliable operational and administrative support.
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MB</div>
+              <div class="testimonial-author-info">
+                <strong>Mirza Baig</strong>
+                <span>Founder &amp; CEO, Tawakul Digital</span>
+              </div>
+            </div>
+            <div class="testimonial-progress-wrap"><div class="testimonial-progress-bar"></div></div>
+          </div>
+
+          <!-- TESTIMONIAL 2 -->
+          <div class="testimonial-card" data-index="1">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>
+              "Nisah brings a rare combination of strategic thinking and execution. She takes direction well, refines quickly, and consistently delivers clear, high-quality work. She's reliable, detail-oriented, and a strong partner for content and project execution.
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">LC</div>
+              <div class="testimonial-author-info">
+                <strong>Leoanny De La Cruz, M.Ed.</strong>
+                <span>Co-Founder &amp; Executive Director, Puente de Esperanza Internacional</span>
+              </div>
+            </div>
+            <div class="testimonial-progress-wrap"><div class="testimonial-progress-bar"></div></div>
+          </div>
+
+          <!-- TESTIMONIAL 3 -->
+          <div class="testimonial-card" data-index="2">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>
+              "Nisah supported me across executive operations, social media management, and workflow systems. She kept communication organized, managed engagement, and ensured consistent execution across platforms. She also brought a systems mindset, using tools and AI to improve efficiency and simplify workflows. Reliable, proactive, and easy to work with. Nisah is someone I'd confidently recommend to any founder who needs dependable operational support.
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">NM</div>
+              <div class="testimonial-author-info">
+                <strong>Natasha Myrick-Broxton</strong>
+                <span>CEO &amp; AI Consultant, Select Auto Parts &amp; Sales, Inc.</span>
+              </div>
+            </div>
+            <div class="testimonial-progress-wrap"><div class="testimonial-progress-bar"></div></div>
+          </div>
+
+        </div><!-- /testimonial-stage -->
+
+        <!-- Right arrow (desktop only) -->
+        <button class="testimonial-arrow testimonial-arrow--next" aria-label="Next testimonial">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M8 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+      </div><!-- /testimonials-rotator -->
+
+      <!-- Navigation dots -->
+      <div class="testimonial-dots" id="testimonialDots">
+        <button class="testimonial-dot tc-dot-active" data-index="0" aria-label="Testimonial 1"></button>
+        <button class="testimonial-dot" data-index="1" aria-label="Testimonial 2"></button>
+        <button class="testimonial-dot" data-index="2" aria-label="Testimonial 3"></button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+       - How potential clients can reach you
+       - EDIT: Fill in your real contact details
+       - The form currently shows your info; you can add a real form later
+  ============================================================ -->
+  <section id="contact" class="contact section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <!-- EDIT: Change this subtitle to match your own call to action -->
+        <p class="section-subtitle">
+          Ready to get more done and stress less? I'd love to hear about your needs.
+          Send me a message and I'll get back to you within 24 hours.
+        </p>
+      </div>
+
+      <!-- Book a Call button -->
+      <div class="contact-cta">
+        <a href="#contactForm" class="btn btn-primary">Book a Call</a>
+      </div>
+
+      <!-- Lead qualification form — full width -->
+      <div class="contact-form-wrapper">
+
+        <form class="contact-form" id="contactForm">
+
+          <!-- Web3Forms access key (required — do not remove) -->
+          <input type="hidden" name="access_key" value="2c8d09cf-34b6-4b15-ac9b-3cec39bbf220" />
+          <input type="hidden" name="subject" value="New Lead Inquiry from Portfolio" />
+
+          <div class="form-inner-grid">
+
+            <!-- Left column -->
+            <div>
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="brand">Business or Personal Brand Name</label>
+                <input type="text" id="brand" name="brand" placeholder="Your Brand or Business Name" />
+              </div>
+              <div class="form-group">
+                <label for="client_type">What best describes you?</label>
+                <select id="client_type" name="client_type" required>
+                  <option value="">Select an option...</option>
+                  <option value="Solopreneur / Coach / Consultant">Solopreneur / Coach / Consultant</option>
+                  <option value="CEO / Agency Owner">CEO / Agency Owner</option>
+                  <option value="Small Business Owner">Small Business Owner</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="challenge">What is your biggest challenge right now?</label>
+                <select id="challenge" name="challenge" required>
+                  <option value="">Select an option...</option>
+                  <option value="Staying consistent with posting">Staying consistent with posting</option>
+                  <option value="Growing my audience and visibility">Growing my audience and visibility</option>
+                  <option value="Converting followers into clients">Converting followers into clients</option>
+                  <option value="Managing everything — I need a right-hand person">Managing everything — I need a right-hand person</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Right column -->
+            <div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="social_profile">Instagram and/or LinkedIn Profile URL</label>
+                <input type="text" id="social_profile" name="social_profile" placeholder="https://instagram.com/yourhandle" />
+              </div>
+              <div class="form-group">
+                <label for="budget">What is your monthly budget?</label>
+                <select id="budget" name="budget" required>
+                  <option value="">Select an option...</option>
+                  <option value="Under $500/month">Under $500/month</option>
+                  <option value="$500–$1,500/month">$500–$1,500/month</option>
+                  <option value="$1,500–$3,000/month">$1,500–$3,000/month</option>
+                  <option value="Let's discuss">Let's discuss</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="timeline">How soon are you looking to start?</label>
+                <select id="timeline" name="timeline" required>
+                  <option value="">Select an option...</option>
+                  <option value="Immediately">Immediately</option>
+                  <option value="Within 30 days">Within 30 days</option>
+                  <option value="Just exploring for now">Just exploring for now</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Full width: platforms checkboxes -->
+          <div class="form-group">
+            <label>Which platforms are you currently active on?</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label"><input type="checkbox" name="platforms" value="Instagram" /> Instagram</label>
+              <label class="checkbox-label"><input type="checkbox" name="platforms" value="LinkedIn" /> LinkedIn</label>
+              <label class="checkbox-label"><input type="checkbox" name="platforms" value="Facebook" /> Facebook</label>
+              <label class="checkbox-label"><input type="checkbox" name="platforms" value="Threads" /> Threads</label>
+              <label class="checkbox-label"><input type="checkbox" name="platforms" value="Other" /> Other</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Submit Application</button>
+
+        </form>
+
+        <!-- Thank you message + Calendly widget (hidden until form is submitted) -->
+        <div id="formThankYou" hidden>
+          <div class="form-success-block">
+            <p class="form-success">&#10003; Thank you! Your application has been received. I'll review it and be in touch shortly.</p>
+            <p class="form-success-sub">In the meantime, feel free to book a free discovery call below:</p>
+          </div>
+          <div id="calendlyWidget"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       - Bottom of the page
+       - Shows your name, a short line, and social media links
+       - EDIT: Update social media URLs with your real profile links
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <p class="footer-name">Nisah H. Camal</p>
+        <p class="footer-tagline">Virtual Assistant &amp; Social Media Manager</p>
+
+        <div class="footer-socials">
+
+          <a href="mailto:nisahcamal24@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Nisah" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </a>
+
+          <a href="https://www.facebook.com/profile.php?id=61585514789203" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/noronisah-h-camal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+
+          <a href="https://calendly.com/nisahcamal24/30min" target="_blank" rel="noopener noreferrer" aria-label="Book a call on Calendly" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+            </svg>
+          </a>
+
+        </div>
+
+        <p class="footer-copy">
+          &copy; <span id="footerYear"></span> Nisah H. Camal. All rights reserved.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Links to your JavaScript file (script.js) — always at the bottom of the page -->
+  <script src="script.js"></script>
+</body>
+</html>
