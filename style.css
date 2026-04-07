@@ -2215,6 +2215,16 @@ button {
   transform: translateY(0);
 }
 
+.savings-amount {
+  font-weight: 700;
+  color: var(--color-blush);
+}
+
+.savings-detail {
+  font-weight: 400;
+  color: var(--color-light);
+}
+
 /* ── Best for ────────────────────────────────────────────── */
 .pricing-best-for {
   font-size: var(--text-sm);

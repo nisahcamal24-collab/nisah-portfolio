@@ -202,10 +202,10 @@ if (pricingToggle) {
     // Animate savings callout in/out
     document.querySelectorAll('.js-savings').forEach(function (el) {
       if (isYearly) {
-        el.textContent = el.dataset.yearly;
+        el.innerHTML = el.dataset.yearly;
         el.classList.add('visible');
       } else {
-        el.textContent = '\u00a0'; // non-breaking space preserves height
+        el.innerHTML = '\u00a0'; // non-breaking space preserves height
         el.classList.remove('visible');
       }
     });
