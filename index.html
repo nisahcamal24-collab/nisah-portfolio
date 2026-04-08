@@ -51,12 +51,32 @@
        - Shows your name, title, and a short tagline
   ============================================================ -->
   <section id="hero" class="hero">
+    <!-- Animated radial glow background -->
+    <div class="hero-bg-pulse" aria-hidden="true"></div>
+
+    <!-- Floating gold particles -->
+    <div class="hero-particles" aria-hidden="true">
+      <span class="hero-particle" style="left:8%;animation-duration:5s;animation-delay:0.5s"></span>
+      <span class="hero-particle" style="left:18%;animation-duration:7s;animation-delay:2s"></span>
+      <span class="hero-particle" style="left:27%;animation-duration:4.5s;animation-delay:4s"></span>
+      <span class="hero-particle" style="left:35%;animation-duration:8s;animation-delay:1s"></span>
+      <span class="hero-particle" style="left:44%;animation-duration:6s;animation-delay:3.5s"></span>
+      <span class="hero-particle" style="left:52%;animation-duration:5.5s;animation-delay:0s"></span>
+      <span class="hero-particle" style="left:61%;animation-duration:9s;animation-delay:5s"></span>
+      <span class="hero-particle" style="left:70%;animation-duration:4s;animation-delay:1.5s"></span>
+      <span class="hero-particle" style="left:78%;animation-duration:7.5s;animation-delay:6s"></span>
+      <span class="hero-particle" style="left:85%;animation-duration:6.5s;animation-delay:2.5s"></span>
+      <span class="hero-particle" style="left:91%;animation-duration:5s;animation-delay:4.5s"></span>
+      <span class="hero-particle" style="left:15%;animation-duration:8.5s;animation-delay:3s"></span>
+      <span class="hero-particle" style="left:57%;animation-duration:6s;animation-delay:0.8s"></span>
+    </div>
+
     <div class="hero-content">
       <p class="hero-greeting">Hello, I'm</p>
       <h1 class="hero-name">Nisah H. Camal</h1>
 
       <!-- EDIT: Replace with your title/specialization -->
-      <h2 class="hero-title">Virtual Assistant &amp; Social Media Manager</h2>
+      <h2 class="hero-title">Executive Virtual Assistant &amp; Social Media Manager</h2>
 
       <!-- EDIT: Replace with your own short tagline (1-2 sentences) -->
       <p class="hero-tagline">
@@ -65,8 +85,8 @@
       </p>
 
       <div class="hero-buttons">
-        <a href="#services" class="btn btn-primary">See What I Do</a>
-        <a href="#contact" class="btn btn-outline">Work With Me</a>
+        <a href="#contact" class="btn btn-primary">Work With Me</a>
+        <a href="#services" class="btn btn-outline">See What I Do</a>
       </div>
     </div>
 
@@ -74,6 +94,14 @@
     <div class="hero-decoration" aria-hidden="true">
       <div class="shape shape-1"></div>
       <div class="shape shape-2"></div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll-indicator" id="heroScrollIndicator" aria-hidden="true">
+      <div class="hero-scroll-box">
+        <div class="hero-scroll-dot"></div>
+      </div>
+      <span class="hero-scroll-label">scroll</span>
     </div>
   </section>
 
@@ -103,40 +131,50 @@
         </div>
 
         <div class="about-text about-card">
-          <span class="section-label">About Me</span>
-          <h2 class="section-title">The Person Behind the Work</h2>
+          <span class="section-label" data-about-anim="0">About Me</span>
+          <h2 class="section-title" data-about-anim="1">Reclaim Your Time While I Scale Your Presence</h2>
 
-          <p>
+          <p data-about-anim="2">
             Hi, I'm Nisah. A dedicated Executive Virtual Assistant and Social Media Manager
             with over 5 years of experience supporting executives, entrepreneurs, and small
             business owners. I specialize in executive assistance and social media management,
             helping clients run smoother operations and build a stronger online presence.
           </p>
 
-          <p>
+          <p data-about-anim="3">
             I bring a detail-oriented, proactive approach to every project. Clear communication,
             consistent deadlines, and going the extra mile are not just promises; they are the
             standard I hold myself to for every client I serve.
           </p>
 
-          <p class="about-what-label">What I bring to the table:</p>
+          <p class="about-what-label" data-about-anim="4"><span class="section-label-line"></span>What I Bring to the Table</p>
 
           <ul class="about-highlights">
-            <li>
+            <li data-about-anim="5">
               <span class="highlight-icon">&#10003;</span>
               <span>Experienced in executive-level calendar and inbox management</span>
             </li>
-            <li>
+            <li data-about-anim="6">
               <span class="highlight-icon">&#10003;</span>
               <span>Skilled in content creation and social media strategy</span>
             </li>
-            <li>
+            <li data-about-anim="7">
               <span class="highlight-icon">&#10003;</span>
               <span>Reliable, professional, and confidential — always</span>
             </li>
           </ul>
 
-          <a href="#contact" class="btn btn-primary">Let's Connect</a>
+          <hr class="about-divider" data-about-anim="8" />
+
+          <div class="about-pull-quote" data-about-anim="9">
+            <p>
+              When I'm not optimizing workflows, you'll likely find me at the heart of a family wedding
+              or community event. I'm a firm believer that being organized at work allows us to be
+              truly present for life's big celebrations.
+            </p>
+          </div>
+
+          <a href="#contact" class="btn btn-primary" data-about-anim="10">Let's Connect</a>
         </div>
 
       </div>
@@ -1215,7 +1253,7 @@
       <div class="footer-content">
 
         <p class="footer-name">Nisah H. Camal</p>
-        <p class="footer-tagline">Virtual Assistant &amp; Social Media Manager</p>
+        <p class="footer-tagline">Executive Virtual Assistant &amp; Social Media Manager</p>
 
         <div class="footer-socials">
 

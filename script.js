@@ -15,6 +15,50 @@
 
 
 /* ============================================================
+   HERO ENTRANCE ANIMATIONS
+   Fires immediately on page load — no scroll trigger.
+   Each hero element animates in sequence via delayed classes.
+============================================================ */
+
+(function () {
+  var heroGreeting = document.querySelector('.hero-greeting');
+  var heroName     = document.querySelector('.hero-name');
+  var heroTitle    = document.querySelector('.hero-title');
+  var heroTagline  = document.querySelector('.hero-tagline');
+  var heroBtns     = document.querySelector('.hero-buttons');
+  var heroScroll   = document.getElementById('heroScrollIndicator');
+
+  var items = [
+    { el: heroGreeting, delay: 0    },
+    { el: heroName,     delay: 300  },
+    { el: heroTitle,    delay: 600  },
+    { el: heroTagline,  delay: 850  },
+    { el: heroBtns,     delay: 1100 },
+    { el: heroScroll,   delay: 1400 }
+  ];
+
+  items.forEach(function (item) {
+    if (!item.el) return;
+    setTimeout(function () {
+      item.el.classList.add('hero-anim-in');
+    }, item.delay);
+  });
+
+  // Hide scroll indicator once user scrolls past the hero section
+  var heroSection = document.getElementById('hero');
+  if (heroScroll && heroSection) {
+    window.addEventListener('scroll', function () {
+      if (heroSection.getBoundingClientRect().bottom < 0) {
+        heroScroll.classList.add('hero-scroll-hide');
+      } else {
+        heroScroll.classList.remove('hero-scroll-hide');
+      }
+    }, { passive: true });
+  }
+}());
+
+
+/* ============================================================
    1. NAVBAR SCROLL EFFECT
    Adds a border + shadow to the navbar once the user
    scrolls more than 20px down the page.
@@ -402,6 +446,37 @@ if (pricingToggle) {
 /* ============================================================
    10. SMOOTH SCROLL OFFSET FIX
 ============================================================ */
+
+/* ============================================================
+   11. ABOUT SECTION — Scroll-triggered entrance animations
+============================================================ */
+
+(function () {
+  if (!window.IntersectionObserver) return;
+
+  var delays = [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+  var elements = document.querySelectorAll('[data-about-anim]');
+
+  if (!elements.length) return;
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      var idx = parseInt(el.getAttribute('data-about-anim'), 10);
+      var delay = delays[idx] !== undefined ? delays[idx] : 0;
+      setTimeout(function () {
+        el.classList.add('about-anim-in');
+      }, delay);
+      observer.unobserve(el);
+    });
+  }, { threshold: 0.15 });
+
+  elements.forEach(function (el) {
+    observer.observe(el);
+  });
+}());
+
 
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   anchor.addEventListener('click', function (event) {
