@@ -203,61 +203,6 @@ if (contactForm) {
 
 
 /* ============================================================
-   6. PRICING BILLING TOGGLE
-   Switches price display between monthly and yearly billing.
-   Uses data-monthly / data-yearly attributes on each element
-   so no amounts are hardcoded in JavaScript.
-============================================================ */
-
-const pricingToggle       = document.getElementById('pricingToggle');
-const pricingLabelMonthly = document.getElementById('pricingLabelMonthly');
-const pricingLabelYearly  = document.getElementById('pricingLabelYearly');
-
-if (pricingToggle) {
-  let isYearly = false;
-
-  // Set initial active label
-  pricingLabelMonthly.classList.add('active');
-
-  pricingToggle.addEventListener('click', function () {
-    isYearly = !isYearly;
-    pricingToggle.setAttribute('aria-pressed', isYearly);
-    pricingToggle.classList.toggle('is-yearly', isYearly);
-
-    // Highlight the active period label
-    pricingLabelMonthly.classList.toggle('active', !isYearly);
-    pricingLabelYearly.classList.toggle('active', isYearly);
-
-    // Swap price amounts
-    document.querySelectorAll('.js-price-amount').forEach(function (el) {
-      el.textContent = isYearly ? el.dataset.yearly : el.dataset.monthly;
-    });
-
-    // Swap period text (/month ↔ /year)
-    document.querySelectorAll('.js-price-period').forEach(function (el) {
-      el.textContent = isYearly ? el.dataset.yearly : el.dataset.monthly;
-    });
-
-    // Swap prefix text (only Operations card uses this)
-    document.querySelectorAll('.js-price-prefix').forEach(function (el) {
-      el.textContent = isYearly ? el.dataset.yearly : el.dataset.monthly;
-    });
-
-    // Animate savings callout in/out
-    document.querySelectorAll('.js-savings').forEach(function (el) {
-      if (isYearly) {
-        el.innerHTML = el.dataset.yearly;
-        el.classList.add('visible');
-      } else {
-        el.innerHTML = '\u00a0'; // non-breaking space preserves height
-        el.classList.remove('visible');
-      }
-    });
-  });
-}
-
-
-/* ============================================================
    9. TESTIMONIALS FADE ROTATOR
    One card shown at a time. Auto-advances every 5 seconds.
    Pauses on hover / touch. Supports dots, arrows, and swipe.
